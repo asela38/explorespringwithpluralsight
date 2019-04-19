@@ -17,11 +17,6 @@
         <java.version>1.8</java.version>
         <skipTests>true</skipTests>
 
-        <!-- servlet/jsp/EL (3.0/2.2/2.2),(3.1/2.3/3.0) -->
-        <javaee-api.version>7.0</javaee-api.version>
-        <servlet-api.version>3.1.0</servlet-api.version>
-        <jsp-api.version>2.3.1</jsp-api.version>
-        <el-api.version>3.0.0</el-api.version>
 
         <server.port>8080</server.port>
         <log.level>DEBUG</log.level>
@@ -58,32 +53,6 @@
 
     </dependencies>
 
-    <build>
-        <finalName>${project.artifactId}</finalName>
-        <plugins>
-            <!--plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>${jetty.version}</version>
 
-                <configuration>
-                    <stopKey>stop</stopKey>
-                    <stopPort>8888</stopPort>
-                    <scanIntervalSeconds>8</scanIntervalSeconds>
-                    <webAppSourceDirectory>${webAppSourceDir}</webAppSourceDirectory>
-                    <war>${project.basedir}/target/${project.artifactId}</war>
-
-                    <webAppConfig>
-                        <contextPath>/</contextPath>
-                        <defaultsDescriptor>${webAppSourceDir}/WEB-INF/webdefault.xml</defaultsDescriptor>
-                    </webAppConfig>
-
-                    <httpConnector>
-                        <port>${server.port}</port>
-                    </httpConnector>
-                </configuration>
-            </plugin-->
-        </plugins>
-    </build>
 
 </project>
