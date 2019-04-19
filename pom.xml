@@ -7,6 +7,11 @@
     <groupId>com.spring.learning</groupId>
     <artifactId>explore-spring-with-pluralsight</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>none-spring-base</module>
+        <module>spring-xml-annotation</module>
+        <module>spring-xml</module>
+    </modules>
     <packaging>pom</packaging>
 
 
