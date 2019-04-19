@@ -5,6 +5,7 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
+
     <bean name="customerRepository"
           class="com.asela.repository.HibernateCustomerRepositoryImpl"/>
 

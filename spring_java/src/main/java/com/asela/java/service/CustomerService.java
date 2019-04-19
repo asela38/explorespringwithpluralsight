@@ -1,6 +1,6 @@
-package com.asela.service;
+package com.asela.java.service;
 
-import com.asela.model.Customer;
+import com.asela.java.model.Customer;
 
 import java.util.List;
 

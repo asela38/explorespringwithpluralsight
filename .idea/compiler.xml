@@ -6,15 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="none-spring-base" />
-        <module name="spring-xml" />
-        <module name="spring-xml-annotation" />
+        <module name="explore-spring-mvc" />
         <module name="spring_java" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="non-spring-base" target="1.8" />
+      <module name="none-spring-base" target="1.8" />
       <module name="nonespringbase" target="1.8" />
+      <module name="spring-xml" target="1.8" />
+      <module name="spring-xml-annotation" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

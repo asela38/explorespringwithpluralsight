@@ -1,10 +1,13 @@
-package com.asela.repository;
+package com.asela.java.repository;
 
-import com.asela.model.Customer;
+import com.asela.java.model.Customer;
+import org.springframework.stereotype.Repository;
 
 import java.util.Arrays;
 import java.util.List;
 
+
+@Repository("customerRepository")
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
 

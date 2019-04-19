@@ -1,39 +1,34 @@
-package com.asela.service;
+package com.asela.java.service;
 
-import com.asela.model.Customer;
-import com.asela.repository.CustomerRepository;
+import com.asela.java.model.Customer;
+import com.asela.java.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service("customerService")
+@Scope("prototype")
 public class CustomerServiceImpl implements CustomerService {
 
-
-    @Value("${application.name}")
-    private String appname;
-
-
+    @Autowired
     private CustomerRepository customerRepository;
 
-    @Autowired
-    public CustomerServiceImpl(CustomerRepository customerRepository) {
-        System.out.println("Constructor: customerRepository = " + customerRepository + " " + appname);
-        this.customerRepository = customerRepository;
-    }
+    @Value("${application.name}")
+    private String applicationName;
 
 
     @Override
     public List<Customer> findAll() {
-        System.out.println("appname = " + appname);
+        System.out.println("applicationName = " + applicationName);
+
         return customerRepository.findAll();
     }
 
-   //  @Autowired
     public void setCustomerRepository(CustomerRepository customerRepository) {
-        System.out.println("Setter customerRepository = " + customerRepository);
+
         this.customerRepository = customerRepository;
     }
 }

@@ -1,6 +1,6 @@
-package com.asela.repository;
+package com.asela.java.repository;
 
-import com.asela.model.Customer;
+import com.asela.java.model.Customer;
 
 import java.util.List;
 

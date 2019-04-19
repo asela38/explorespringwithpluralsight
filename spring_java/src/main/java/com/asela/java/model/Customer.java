@@ -1,5 +1,5 @@
 
-package com.asela.model;
+package com.asela.java.model;
 
 public class Customer {
 
