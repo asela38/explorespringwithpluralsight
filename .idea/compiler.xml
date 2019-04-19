@@ -8,9 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="none-spring-base" />
         <module name="spring-xml" />
+        <module name="spring-xml-annotation" />
+        <module name="spring_java" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="non-spring-base" target="1.8" />
       <module name="nonespringbase" target="1.8" />
     </bytecodeTargetLevel>
   </component>

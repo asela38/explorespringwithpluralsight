@@ -11,6 +11,7 @@
         <module>none-spring-base</module>
         <module>spring-xml-annotation</module>
         <module>spring-xml</module>
+        <module>spring_java</module>
     </modules>
     <packaging>pom</packaging>
 
